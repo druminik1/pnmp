@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="player.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PlayerController">
+   <children>
+      <VBox fx:id="playerBox" layoutX="18.0" layoutY="25" prefHeight="355.0" prefWidth="360.0">
+         <children>
+            <Pane id="image_pane" prefHeight="300.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="vinyl" fitHeight="300.0" fitWidth="300.0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="vinyl_transparent.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <HBox prefHeight="50.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="btn_stop_play" mnemonicParsing="false" onAction="#startStopPlayback" prefHeight="30.0" prefWidth="60.0" text="Stop" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Slider fx:id="volume_slider" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <Label text="Volume">
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

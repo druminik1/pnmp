@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MusicLibraryController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="800.0" prefWidth="600.0">
+         <children>
+            <Label text="Music Library">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TreeView fx:id="trv_library" prefHeight="750.0" prefWidth="580" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
